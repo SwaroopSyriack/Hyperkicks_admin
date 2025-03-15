@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_disabled_visible_24" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/img1"
+            android:text="PRODUCT NAME"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mrp_tag"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/img1"
+            android:text="MRP :"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/mrp"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/mrp_tag"
+            android:text="0.00"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/stock_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mrp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/img1"
+            android:text="Stock :"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mrp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/stock_tag"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/stock"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/DELETE"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

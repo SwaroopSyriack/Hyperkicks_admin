@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HperKicksAdmin</string>
+    <string name="slider">ADD TO SLIDER</string>
+    <string name="add_brands">ADD BRANDS</string>
+    <string name="add_products">ADD PRODUCTS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_orders">VIEW ORDERS</string>
+    <string name="logout">Logout</string>
+    <string name="hyper_kicks_">HYPER KICKS</string>
+    <string name="admin">ADMIN</string>
+    <string name="OPEN">Open</string>
+    <string name="CLOSE">Close</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="upload">Upload</string>
+    <string name="add_brand_name">brand name</string>
+    <string name="splash_text">HYPER KICKS</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_mrp">Product MRP</string>
+    <string name="product_sp">Product Sp</string>
+    <string name="submit">Submit</string>
+    <string name="hyper_kicks">HyperKicks</string>
+    <string name="select">select_a_item</string>
+    <string name="DELETE">DELETE</string>
+</resources>

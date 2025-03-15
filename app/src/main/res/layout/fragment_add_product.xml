@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_orders">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/cat_spinner"
+        app:layout_constraintTop_toTopOf="@+id/cat_spinner">
+
+        <EditText
+            android:id="@+id/Product_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:hint="@string/product_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Product_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/Product_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="14dp"
+            android:ems="10"
+            android:hint="@string/product_description"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Product_MRP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_name" />
+
+        <EditText
+            android:id="@+id/Product_MRP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:hint="@string/product_mrp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Product_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_description" />
+
+        <EditText
+            android:id="@+id/Product_sp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="@string/product_sp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/cat_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_MRP" />
+
+        <Spinner
+            android:id="@+id/cat_spinner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="21dp"
+            android:contentDescription="@string/select"
+            app:layout_constraintBottom_toTopOf="@+id/product_submit_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_sp" />
+
+        <Button
+            android:id="@+id/product_submit_btn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="23dp"
+            android:backgroundTint="#121111"
+            android:text="@string/submit"
+            android:textColor="#F8F5F5"
+            app:layout_constraintBottom_toTopOf="@+id/product_img_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_spinner" />
+
+        <ImageView
+            android:id="@+id/product_img_view"
+            android:layout_width="297dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/product_img_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_submit_btn"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/product_img_btn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#0E0E0E"
+            android:text="@string/upload"
+            android:textColor="#EFE6E6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_img_view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

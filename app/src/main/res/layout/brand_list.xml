@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/white">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end"
+        android:backgroundTintMode="screen"
+        android:contentDescription="@string/upload"
+        app:srcCompat="@drawable/baseline_remove_circle_outline_24" />
+
+    <!-- ImageView for displaying an image -->
+    <ImageView
+        android:id="@+id/recyclerImage"
+        android:layout_width="374dp"
+        android:layout_height="176dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_disabled_visible_24" />
+
+    <!-- TextView for displaying text -->
+
+
+    <TextView
+        android:id="@+id/textViewbrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_brand_name"
+        android:textSize="16sp" />
+</LinearLayout>
